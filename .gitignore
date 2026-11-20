@@ -1,0 +1,8 @@
+# Local unpacked dumps, saves, and private logs should never be committed
+/restored/
+*.sav
+*.log
+!.gitkeep
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,101 @@
+{
+  "Helden-UE5.7-current.usmap.gz": {
+    "source_filename": "Helden-5.7.4-51494982+++UE5+Release-5.7-1c1a1497.usmap",
+    "source_bytes": 2223017,
+    "source_sha256": "c3f70cd4f7c9189d9b1581648ade1b18cce2bbf5f8cf5cf31ccb6ad1ccd598af",
+    "compressed_bytes": 727072,
+    "compressed_sha256": "47a0d588dd427f6974c74e82fb496b00201e2329161d0cb1b3aaba667468f22e",
+    "base64_lines": 388
+  },
+  "Helden-UE5.7-previous.usmap.gz": {
+    "source_filename": "Helden.usmap",
+    "source_bytes": 2172010,
+    "source_sha256": "e72f8448745249fe3e522efa6af3edb7efe4415d454563447061fce39f648456",
+    "compressed_bytes": 708143,
+    "compressed_sha256": "6b1103163fec05f0248729eeae5b7d5fa766e9db076dd33fd8a92b8479404db3",
+    "base64_lines": 378
+  },
+  "current-schema.json.gz": {
+    "source_filename": "current_schema.json",
+    "source_bytes": 6400472,
+    "source_sha256": "4e60969a115114b6060355763e30a29557bb4c384028e4608953827eedf2e2cd",
+    "compressed_bytes": 576834,
+    "compressed_sha256": "0b984bf8f83b95ffb81c184a78b2c73e8e15e789f08ab1c1a98a805b58b61ee7",
+    "base64_lines": 308
+  },
+  "previous-schema.json.gz": {
+    "source_filename": "schema.json",
+    "source_bytes": 6249451,
+    "source_sha256": "31fafe5d8a23886b0a4eba595517afcc67096a32b45417b45949225489c773d7",
+    "compressed_bytes": 562510,
+    "compressed_sha256": "ff783fa06f49bac8b49abc0bfe3b7a800bc7eacfbac9f4d1ae4e8519554ec79c",
+    "base64_lines": 301
+  },
+  "UE4SS-ObjectDump.txt.gz": {
+    "source_filename": "UE4SS_ObjectDump.txt",
+    "source_bytes": 32060324,
+    "source_sha256": "cf9d1a9357998905f57c21ac3e2e7848fedd8686f25715e537b0b8570c35821d",
+    "compressed_bytes": 3320532,
+    "compressed_sha256": "752f2799a5db91413dd8a7d72ccda30cb639399f978482d15e756dbf4e87bb6b",
+    "base64_lines": 1771,
+    "parts": [
+      {
+        "file": "UE4SS-ObjectDump.txt.gz.part01",
+        "bytes": 600000,
+        "sha256": "4683e23996c0a5d0ecd6effef304e37003a68060614f2f7b1b9ec99127aa4a32"
+      },
+      {
+        "file": "UE4SS-ObjectDump.txt.gz.part02",
+        "bytes": 600000,
+        "sha256": "25180bf03c68fc422b1a39d52d7e4c8ac712e47b2d5dbe32d3aed84b15125ca1"
+      },
+      {
+        "file": "UE4SS-ObjectDump.txt.gz.part03",
+        "bytes": 600000,
+        "sha256": "3d5c5cdb49df87c1cc4e101fd27198e5149921e6b4857bc5a2ef04a9c37d74f5"
+      },
+      {
+        "file": "UE4SS-ObjectDump.txt.gz.part04",
+        "bytes": 600000,
+        "sha256": "f924e9bf6ff2c61eb37b7f6fd1c3161044b78249c384f4767d22ce351374b583"
+      },
+      {
+        "file": "UE4SS-ObjectDump.txt.gz.part05",
+        "bytes": 600000,
+        "sha256": "99b941aa7392a68a0262259088d2bdb9bdd43e90983b6f17234b223bb1c35656"
+      },
+      {
+        "file": "UE4SS-ObjectDump.txt.gz.part06",
+        "bytes": 320532,
+        "sha256": "35dcdfdf01ddd793321acb24e577be7e60b8f2a36b16e6bddf32144b0da935b4"
+      }
+    ]
+  },
+  "UE4SS-mapper-redacted.log.gz": {
+    "source_filename": "UE4SS(1).log",
+    "source_bytes": 156315,
+    "source_sha256": "9f9cf4752cabefa7db81f4bea911941b5afe9774e661b5eb07d10956b92b4894",
+    "compressed_bytes": 20949,
+    "compressed_sha256": "ca0faab0aa28b961a4ac5fcb4a4833e234ea1bf0fd35dad7e3269ad0dff6577c",
+    "base64_lines": 12,
+    "privacy": "redacted"
+  },
+  "UE4SS-v0.3-redacted.log.gz": {
+    "source_filename": "UE4SS(2).log",
+    "source_bytes": 172197,
+    "source_sha256": "cf3cd6f83e14543bb89336e2c4470d03947f536b4f4ce3a3953258173430547f",
+    "compressed_bytes": 22155,
+    "compressed_sha256": "95b77cab6d696f01acd635d8471ef7b9f47241f784ad8e76ac66838c3264a95c",
+    "base64_lines": 12,
+    "privacy": "redacted"
+  },
+  "UE4SS-v0.4-redacted.log.gz": {
+    "source_filename": "UE4SS(4).log",
+    "source_bytes": 217708,
+    "source_sha256": "437f8cdf1f43906f91d15d1ae0681cbbd44ccfd7139e27b9923b76e61ec42a2e",
+    "compressed_bytes": 24746,
+    "compressed_sha256": "f782e195c64ecface80cc5958284c45fe571370f5792c8744b1413b7a4895c5e",
+    "base64_lines": 14,
+    "privacy": "redacted"
+  }
+}
