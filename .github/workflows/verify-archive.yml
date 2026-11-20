@@ -1,0 +1,41 @@
+name: Verify Grain Rot Handoff Archive
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Python helper scripts
+        run: python -m py_compile scripts/restore_assets.py scripts/search_schema.py scripts/sanitize_log.py scripts/parse_usmap.py
+      - name: Restore and validate all 8 original and sanitized datasets
+        run: python scripts/restore_assets.py --output "$RUNNER_TEMP/grainrot-data"
+      - name: Verify parsed current USMAP matches archived current schema
+        run: |
+          python scripts/parse_usmap.py "$RUNNER_TEMP/grainrot-data/Helden-UE5.7-current.usmap" "$RUNNER_TEMP/parsed-current.json"
+          python - <<'PY'
+          import json, gzip, os
+          from pathlib import Path
+          original=json.loads(gzip.decompress(Path('data/current-schema.json.gz').read_bytes()))
+          parsed=json.loads((Path(os.environ['RUNNER_TEMP'])/'parsed-current.json').read_text('utf8'))
+          assert original == parsed, 'USMAP parser output is inconsistent with archived schema'
+          assert len(original['structs']) == 11094 and len(original['enums']) == 2207
+          print('PASS: 11094 structs and 2207 enums, exact schema parity')
+          PY
+      - name: Verify source snapshots and documentation are present
+        run: |
+          test -s reference/expedition-saver-v0.5/ue4ss/Mods/ExpeditionSaver/Scripts/main.lua
+          test -s reference/expedition-saver-v0.5/tests/test_expedition.lua
+          test -s reference/other-mods/GrainRotQOL/Scripts/main.lua
+          test -s reference/other-mods/GrainRotDepthKeeper/Scripts/main.lua
+          test -s docs/00-HANDOFF.md
+          test -s docs/07-OPEN-QUESTIONS.md
+          echo "PASS: source snapshots and handoff documentation exist"
