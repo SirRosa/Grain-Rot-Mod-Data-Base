@@ -19,7 +19,7 @@ Skrypt weryfikuje **SHA256 skompresowanych i oryginalnych plików**, nie tylko d
 - `restored/current-schema.json` — 11,094 UStruct definitions i 2,207 enum definitions; wygodny do wyszukiwania.
 - `restored/previous-schema.json` — 10,867 UStruct definitions i 2,165 enumów.
 - `restored/UE4SS-ObjectDump.txt` — pełny zrzut refleksji **182,447 linii / 32,060,324 B**.
-- `restored/UE4SS-mapper-redacted.log`, `restored/UE4SS-v0.3-redacted.log`, `restored/UE4SS-v0.4-redacted.log` — logi do analizy, z usuniętymi prywatnymi ścieżkami.
+- `restored/UE4SS-mapper-redacted.log`, `restored/UE4SS-v0.3-redacted.log`, `restored/UE4SS-v0.4-redacted.log` — logi do analizy, z usuniętymi prywatnymi ścieżkami; sumy kontrolne i rozmiary odnoszą się do **zanonimizowanego** tekstu.
 
 **Uwaga:** ObjectDump został podzielony na dokładnie 6 fragmentów z przyczyn limitu transferu. Łącz **bajty gzip** w kolejności `.part01`…`.part06` bez pustych separatorów, a potem rozpakuj gzip. Nie rozpakowuj każdej części osobno (nie są niezależnymi archiwami gzip).
 
@@ -32,9 +32,9 @@ Skrypt weryfikuje **SHA256 skompresowanych i oryginalnych plików**, nie tylko d
 | `data/current-schema.json.gz` | parser bieżącego USMAP | 6,400,472 B |
 | `data/previous-schema.json.gz` | parser starszego USMAP | 6,249,451 B |
 | `data/UE4SS-ObjectDump.txt.gz.part01..06` | `UE4SS_ObjectDump.txt` | 32,060,324 B |
-| `logs/UE4SS-mapper-redacted.log.gz` | `UE4SS(1).log` | 156,315 B |
-| `logs/UE4SS-v0.3-redacted.log.gz` | `UE4SS(2).log` | 172,197 B |
-| `logs/UE4SS-v0.4-redacted.log.gz` | `UE4SS(4).log` | 217,708 B |
+| `logs/UE4SS-mapper-redacted.log.gz` | `UE4SS(1).log` | 156,094 B |
+| `logs/UE4SS-v0.3-redacted.log.gz` | `UE4SS(2).log` | 171,976 B |
+| `logs/UE4SS-v0.4-redacted.log.gz` | `UE4SS(4).log` | 217,487 B |
 
 ## Czego celowo nie publikowano
 
