@@ -73,29 +73,32 @@
   },
   "UE4SS-mapper-redacted.log.gz": {
     "source_filename": "UE4SS(1).log",
-    "source_bytes": 156315,
-    "source_sha256": "9f9cf4752cabefa7db81f4bea911941b5afe9774e661b5eb07d10956b92b4894",
+    "source_bytes": 156094,
+    "source_sha256": "4a5c1c7e013ecc5f49ac5481ee9a51bdf9512857573d988b344386fe5003ef1c",
     "compressed_bytes": 20949,
     "compressed_sha256": "ca0faab0aa28b961a4ac5fcb4a4833e234ea1bf0fd35dad7e3269ad0dff6577c",
     "base64_lines": 12,
-    "privacy": "redacted"
+    "privacy": "redacted; source checksum covers sanitized text only",
+    "original_input_bytes": 156315
   },
   "UE4SS-v0.3-redacted.log.gz": {
     "source_filename": "UE4SS(2).log",
-    "source_bytes": 172197,
-    "source_sha256": "cf3cd6f83e14543bb89336e2c4470d03947f536b4f4ce3a3953258173430547f",
+    "source_bytes": 171976,
+    "source_sha256": "9e1a484beed43bcb96cefc2bb3ca356cc7eb0644fb189b12b97077088da04664",
     "compressed_bytes": 22155,
     "compressed_sha256": "95b77cab6d696f01acd635d8471ef7b9f47241f784ad8e76ac66838c3264a95c",
     "base64_lines": 12,
-    "privacy": "redacted"
+    "privacy": "redacted; source checksum covers sanitized text only",
+    "original_input_bytes": 172197
   },
   "UE4SS-v0.4-redacted.log.gz": {
     "source_filename": "UE4SS(4).log",
-    "source_bytes": 217708,
-    "source_sha256": "437f8cdf1f43906f91d15d1ae0681cbbd44ccfd7139e27b9923b76e61ec42a2e",
+    "source_bytes": 217487,
+    "source_sha256": "d691ffd1432ce2b988359132db5f284deccb25e5a936381bef71d91807377f1e",
     "compressed_bytes": 24746,
     "compressed_sha256": "f782e195c64ecface80cc5958284c45fe571370f5792c8744b1413b7a4895c5e",
     "base64_lines": 14,
-    "privacy": "redacted"
+    "privacy": "redacted; source checksum covers sanitized text only",
+    "original_input_bytes": 217708
   }
 }
